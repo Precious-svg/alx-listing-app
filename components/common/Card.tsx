@@ -7,7 +7,7 @@ interface CardProps {
     onClick: () => void;
   }
 
-const Cards: React.FC<CardProps> = ({ title, description, imageUrl, onClick }) => {
+const Card: React.FC<CardProps> = ({ title, description, imageUrl, onClick }) => {
   return (
     <div className="card" onClick={onClick}>
       <img src={imageUrl} alt={title} className="card-image" />
@@ -19,4 +19,4 @@ const Cards: React.FC<CardProps> = ({ title, description, imageUrl, onClick }) =
   )
 }
 
-export default Cards
+export default Card
